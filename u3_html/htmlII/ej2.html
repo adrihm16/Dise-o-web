@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ej2html</title>
+</head>
+<body>
+    <main>
+        <table border="1 px" style="border-collapse: collapse;">
+            <thead>
+                <tr><th colspan="3">Alumnos</th></tr>
+            </thead>
+            <tbody>
+                <tr><td rowspan="2">Adrián</td><td>DAW</td><td>7</td></tr>
+                <tr><td>DES</td><td>8</td></tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">media final</td><td>7.5</td></tr>
+            </tfoot>
+        </table>
+        <hr/>
+        <div>
+            <form action="" method="post">
+                <label for="Nombre">Nombre</label>
+                <input type="text" name="Nombre">
+                <label for="Apellidos">Apellidos</label>
+                <input type="text" name="Apellidos">
+                <br>
+                <br>
+                <label for="curso">Curso</label>
+                <input type="text" name="curso">
+                <label for="email">email</label>
+                <input type="email" name="email">
+                <label for="especialidad">especialidad</label>
+                <select name="especialidad">
+                    <option value="daw">DAW</option>
+                    <option value="des">ASIR</option>
+                </select>
+                <br>
+                <br>
+                <label for="check">Acepto política de datos</label>
+                <input type="checkbox" name="check">
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <hr/>
+        <div>
+            
+            <figure>
+                <img src="logo.jpg" alt="Logo">
+                <figcaption>Logo de IES Trafalgar</figcaption>
+            </figure>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Web</title>
+</head>
+<body>
+
+    <header>
+        <h1>Servicios Digitales Profesionales</h1>
+        <nav>
+            <ul>
+                <li><a href="#diseno-web">Diseño Web</a></li>
+                <li><a href="#programacion-web">Programación Web</a></li>
+                <li><a href="#mantenimiento">Mantenimiento</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="diseno-web">
+            <h2>Diseño Web y UX/UI</h2>
+            
+            <article>
+                <h3>Creación de interfaces atractivas y funcionales</h3>
+                <p>Nos enfocamos en la experiencia del usuario (UX) para garantizar que su sitio web no solo se vea bien, sino que también sea intuitivo y fácil de usar, maximizando la conversión y la retención.</p>
+            </article>
+
+            <figure>
+                <img src="img/diseno-web.jpg" alt="Boceto de diseño de interfaz de usuario">
+                <figcaption>Fase de wireframing y prototipado.</figcaption>
+            </figure>
+
+            <h3>Proceso de Diseño</h3>
+            <ol>
+                <li>Investigación de mercado y público objetivo.</li>
+                <li>Creación de **Wireframes** (bocetos de estructura).</li>
+                <li>Diseño de la interfaz visual (Mockups).</li>
+                <li>Entrega de prototipo interactivo para aprobación.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="programacion-web">
+            <h2>Programación y Desarrollo Web</h2>
+
+            <article>
+                <h3>Desarrollo Front-end y Back-end robusto</h3>
+                <p>Construimos la funcionalidad de su aplicación utilizando las últimas tecnologías. Desde APIs RESTful hasta interfaces dinámicas con frameworks modernos como React o Vue.</p>
+            </article>
+
+            <figure>
+                <img src="img/programacion-web.jpg" alt="Código JavaScript en un editor de texto">
+                <figcaption>Desarrollo de lógica Back-end y base de datos.</figcaption>
+            </figure>
+
+            <h3>Fases de Desarrollo</h3>
+            <ol>
+                <li>Configuración del entorno de desarrollo.</li>
+                <li>Codificación de componentes y lógica.</li>
+                <li>Integración con bases de datos y servicios externos.</li>
+                <li>Pruebas unitarias y de integración.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="mantenimiento">
+            <h2>Mantenimiento y Soporte</h2>
+
+            <article>
+                <h3>Sitios web seguros y actualizados 24/7</h3>
+                <p>Ofrecemos planes de soporte continuos que garantizan la seguridad, el rendimiento y la actualización constante de su plataforma, previniendo fallos y ataques maliciosos.</p>
+            </article>
+
+            <figure>
+                <img src="img/mantenimiento.jpg" alt="Servidores de centro de datos en funcionamiento">
+                <figcaption>Monitorización y copias de seguridad continuas.</figcaption>
+            </figure>
+
+            <h3>Servicios Incluidos</h3>
+            <ol>
+                <li>Actualizaciones de seguridad y parches.</li>
+                <li>Monitorización de rendimiento y velocidad.</li>
+                <li>Copia de seguridad diaria o semanal.</li>
+                <li>Soporte técnico y resolución de incidencias.</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section id="planes">
+            <h2>Planes de Servicio</h2>
+            <table border="1px" style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th scope="col" colspan="2">Característica</th>
+                        <th scope="col">Básico</th>
+                        <th scope="col">Pro</th>
+                        <th scope="col">Empresa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Desarrollo</th>
+                        <th scope="row">Páginas</th>
+                        <td>Hasta 5</td>
+                        <td>Hasta 20</td>
+                        <td>Ilimitadas</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">E-commerce</th>
+                        <td>No</td>
+                        <td>Opcional</td>
+                        <td>Incluido</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">BBDD</th>
+                        <td>Sencilla</td>
+                        <td>Múltiple</td>
+                        <td>Cluster</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Mantenimiento</th>
+                        <th scope="row">Soporte</th>
+                        <td>Email (24h)</td>
+                        <td>Teléfono (8h)</td>
+                        <td>24/7 Dedicado</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Backups</th>
+                        <td>Mensual</td>
+                        <td>Semanal</td>
+                        <td>Diario</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Todos los planes incluyen un año de dominio gratuito.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="contacto">
+            <h2>✉️ Contacta con Nosotros</h2>
+            <form action="/procesar-formulario" method="POST">
+                
+                <p>
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label>Tipo de Servicio:</label><br>
+                    <input type="radio" id="diseno" name="servicio" value="diseno" required>
+                    <label for="diseno">Diseño Web</label><br>
+
+                    <input type="radio" id="programacion" name="servicio" value="programacion">
+                    <label for="programacion">Programación</label><br>
+
+                    <input type="radio" id="mantenimiento-r" name="servicio" value="mantenimiento">
+                    <label for="mantenimiento-r">Mantenimiento</label>
+                </p>
+
+                <p>
+                    <label for="presupuesto">Presupuesto Estimado (€):</label>
+                    <input type="number" id="presupuesto" name="presupuesto_estimado" min="100" step="50">
+                </p>
+
+                <p>
+                    <label for="comentarios">Comentarios Adicionales:</label>
+                    <textarea id="comentarios" name="comentarios" rows="5"></textarea>
+                </p>
+
+                <button type="submit">Enviar Solicitud</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Servicios Web. Todos los derechos reservados.</p>
+        <p><a href="#politica-privacidad">Política de Privacidad</a></p>
+    </footer>
+
+</body>
+</html>
