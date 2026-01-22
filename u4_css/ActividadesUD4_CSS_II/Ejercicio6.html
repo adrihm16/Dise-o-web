@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 6 – Animaciones</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .animacion {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: relative;
+
+            /* 6. Propiedad abreviada animation */
+            animation: miEfecto 4s ease-in-out 0s infinite alternate;
+        }
+
+        @keyframes miEfecto {
+            0% {
+                background-color: #3498db;
+                transform: translateX(0) scale(1);
+            }
+
+            50% {
+                background-color: #9b59b6;
+                transform: translateX(100px) scale(1.5);
+                border-radius: 50%;
+            }
+
+            100% {
+                background-color: #e74c3c;
+                transform: translateX(200px) scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="animacion"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Web corporativa</title>
+  <style>
+    .layout {
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 80px 1fr 60px;
+      grid-template-areas:
+        "header header"
+        "menu content"
+        "footer footer";
+      gap: 15px;
+      place-items: center;
+      min-height: 100vh;
+    }
+
+    .header {
+      grid-area: header;
+      background-color: #3498db;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu {
+      grid-area: menu;
+      background-color: #2ecc71;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      grid-area: content;
+      background-color: #ecf0f1;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer {
+      grid-area: footer;
+      background-color: #95a5a6;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="layout">
+    <header class="header">Header</header>
+    <nav class="menu">Menú lateral</nav>
+    <main class="content">Contenido principal</main>
+    <footer class="footer">Footer</footer>
+  </div>
+
+</body>
+
+</html>

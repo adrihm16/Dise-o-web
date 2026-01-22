@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5 – Transiciones</title>
+    <style>
+        .caja-transicion {
+            /* 1. Tamaño e imagen inicial */
+            width: 150px;
+            height: 150px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            cursor: pointer;
+            border-radius: 8px;
+
+            /* 3, 4 y 5. Configuración de la transición */
+            transition: all 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s;
+        }
+
+        /* 2. Estado final al pasar el ratón (:hover) */
+        .caja-transicion:hover {
+            width: 400px;
+            background-color: #e67e22;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="caja-transicion">Pasa el ratón</div>
+
+</body>
+
+</html>

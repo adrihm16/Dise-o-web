@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 2 – Bordes y box-sizing</title>
+    <style>
+        .contenedor {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* 1 y 2. Configuración para ambas cajas */
+        .caja1,
+        .caja2 {
+            width: 200px;
+            padding: 20px;
+            border: 10px solid #3498db;
+            background-color: #ecf0f1;
+            margin-bottom: 10px;
+        }
+
+        /* 4. Aplicar box-sizing: border-box a la segunda caja */
+        .caja2 {
+            box-sizing: border-box;
+            border-color: #e74c3c;
+        }
+
+        /* 5. EXPLICACIÓN:
+        - En la caja 1 El ancho total es 260px (200 de ancho + 40 de padding + 20 de borde) y el tamaño crece hacia afuera.
+        - En la caja 2 El ancho total es exactamente 200px. El padding y el borde se dibujan hacia adentro.
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="caja1">Caja 1: content-box (Se ve más grande)</div>
+        <div class="caja2">Caja 2: border-box (Respeta los 200px)</div>
+    </div>
+
+</body>
+
+</html>

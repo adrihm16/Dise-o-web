@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparativa de Unidades CSS</title>
+    <style>
+        body {
+            font-size: 16px;
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+/*
+Lo mejor es usar px para bordes o elementos que deban tener un tamaño físico exacto, y rem, em o %
+para todo lo relacionado con el texto y la estructura del diseño.
+*/
+        .pixel {
+            font-size: 24px;
+        }
+
+        .em {
+            font-size: 1.5em;
+        }
+
+        .porcentaje {
+            font-size: 150%;
+        }
+
+        .contenedor-ejercicio {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Comparativa de Unidades</h1>
+
+<div class="contenedor-ejercicio">
+    <p class="pixel">Párrafo con 24px Tamaño fijo</p>
+    <p class="em">Párrafo con 1.5em</p>
+    <p class="porcentaje">Párrafo con 150%</p>
+</div>
+
+</body>
+</html>

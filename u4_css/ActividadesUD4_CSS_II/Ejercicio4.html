@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 4 – Fondos y sombras</title>
+    <style>
+        .tarjeta {
+            width: 300px;
+            padding: 40px;
+            text-align: center;
+            border-radius: 20px;
+            color: white;
+
+            /* 1. Degradado Lineal */
+            /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
+
+            /* 2. Degradado Radial */
+            /* background: radial-gradient(circle, #ff9a9e 0%, #fad0c4 100%); */
+
+            /* 3. Degradado Cónico */
+            background: conic-gradient(from 45deg, #4facfe, #00f2fe, #4facfe);
+
+            /* 4. Sombra al texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+            /* 5. Sombra a la caja */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 2.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="tarjeta">
+        <h2>Título</h2>
+        <p>Contenido de la tarjeta</p>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tipografía y Listas en CSS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            border-bottom: 2px solid #3498db;
+            text-transform: uppercase;
+            text-decoration: underline dotted #3498db;
+            letter-spacing: 2px;
+        }
+
+        .alineado-izq { text-align: left; }
+        .alineado-centro { text-align: center; }
+
+        .texto-formateado {
+            text-align: justify;
+            text-indent: 40px;
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            margin-bottom: 30px;
+        }
+
+        .enfasis {
+            font-style: italic;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .lista-personalizada {
+            list-style-type: square;
+            list-style-position: inside;
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .lista-imagen {
+            list-style-image: url('https://cdn-icons-png.flaticon.com/16/5290/5290058.png');
+        }
+
+        .lista-abreviada {
+            list-style: circle outside;
+            line-height: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+<h2 id="titulo">Tipografía Avanzada</h2>
+
+<p class="texto-formateado alineado-izq">
+    <span class="enfasis">Alineación a la izquierda:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+
+<p class="texto-formateado">
+    <span class="enfasis">Alineación justificada:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+
+<h2 class="alineado-centro">Listas Personalizadas</h2>
+
+<h3>Lista con viñetas internas (Inside)</h3>
+<ul class="lista-personalizada">
+    <li>Elemento con posición 'inside'</li>
+    <li>La viñeta forma parte de la línea de texto</li>
+    <li>Útil para menús o listas compactas</li>
+</ul>
+
+<h3>Lista con imagen y abreviado</h3>
+<ul class="lista-imagen">
+    <li>Uso de un icono personalizado</li>
+    <li>Mejora la identidad visual de la marca</li>
+</ul>
+
+<ul class="lista-abreviada">
+    <li>Definido con la propiedad shorthand 'list-style'</li>
+    <li>Mantiene el círculo clásico</li>
+    <li>Posición 'outside' (estándar)</li>
+</ul>
+
+</body>
+</html>

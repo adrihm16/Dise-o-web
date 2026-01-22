@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5<title>
+            <style>
+                #main {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                }
+
+                nav {
+                    width: 150px;
+                    order: 1;
+                    background-color: #ff9a9e;
+                }
+
+                article {
+                    flex-grow: 1;
+                    order: 2;
+                    background-color: #a1c4fd;
+                }
+
+                aside {
+                    width: 150px;
+                    order: 3;
+                    background-color: #c2e9fb;
+                }
+
+                nav,
+                article,
+                aside {
+                    padding: 20px;
+                    min-height: 200px;
+                }
+            </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <article>Contenido principal</article>
+        <nav>Menú de navegación</nav>
+        <aside>Publicidad</aside>
+    </div>
+
+</body>
+
+</html>

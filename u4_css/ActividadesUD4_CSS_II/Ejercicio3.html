@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 3 – Dimensiones</title>
+    <style>
+        .bloque {
+            /* 1. Dimensiones iniciales */
+            width: 50%;
+            height: 200px;
+
+            /* 2. Restricciones de ancho*/
+            min-width: 300px;
+            max-width: 600px;
+
+            /* 3. Restricciones de alto*/
+            min-height: 150px;
+            max-height: 400px;
+
+            /* Estética */
+            background-color: #34495e;
+            color: white;
+            border: 4px solid #f1c40f;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bloque">
+        <h2>Contenido variable</h2>
+        <p>Prueba a cambiar el tamaño de la ventana del navegador:</p>
+        <ul>
+            <li>La caja se detendrá en los 600px.</li>
+            <li>La caja no bajará de los 300px.</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
